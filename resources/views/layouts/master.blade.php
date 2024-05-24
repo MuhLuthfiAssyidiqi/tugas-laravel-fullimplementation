@@ -40,7 +40,7 @@
                         </li>
                     @else
                         <li class="nav-item">
-                            <a class="nav-link fw-bold" href="{{ route('dashboard') }}">Home</a>
+                            <a class="nav-link fw-bold" href="{{ route('home') }}">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link bg-primary border border-dark rounded text-dark fw-bold" href="{{ route('login')}}">Login</a>
