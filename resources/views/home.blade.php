@@ -25,7 +25,11 @@
             <p>Welcome to Amandemy Shopping, where your desires meet their perfect match. Immerse yourself in a
                 world of endless possibilities, curated just for you. Whether you're hunting for unique finds, everyday
                 essentials, or extraordinary gifts, we've got you covered.</p>
-                <a href="{{ route('login') }}" class="btn btn-primary fw-bold text-dark">Buy Now!</a>
+                @auth
+                <a href="{{ route('products') }}" class="btn btn-primary fw-bold text-dark">Buy now!</a>
+            @else
+                <a href="{{ route('login') }}" class="btn btn-primary fw-bold text-dark">Buy now!</a>
+            @endauth
         </div>
         <div class="col-md-4  gambar">
             <img src="https://tse3.mm.bing.net/th?id=OIP.DQmWotJsRgwTkyLHu7hp8gAAAA&pid=Api&P=0&h=180" class="img-fluid" alt="Red Velvet Latte">
